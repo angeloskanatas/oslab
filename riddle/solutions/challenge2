@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./kill
+# +Python script, +kill from terminal (find pid of riddle), +bash script (pidof)

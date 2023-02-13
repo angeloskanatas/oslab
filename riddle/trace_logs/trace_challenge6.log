@@ -1,0 +1,136 @@
+7056  execve("./riddle", ["./riddle"], 0x7ffcbb527738 /* 57 vars */) = 0
+7056  brk(NULL)                         = 0x557717409000
+7056  arch_prctl(0x3001 /* ARCH_??? */, 0x7fffd6a2f2c0) = -1 EINVAL (Invalid argument)
+7056  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f032f1a0000
+7056  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+7056  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+7056  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=52555, ...}, AT_EMPTY_PATH) = 0
+7056  mmap(NULL, 52555, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f032f193000
+7056  close(3)                          = 0
+7056  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+7056  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+7056  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14432, ...}, AT_EMPTY_PATH) = 0
+7056  mmap(NULL, 16424, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f032f18e000
+7056  mmap(0x7f032f18f000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f032f18f000
+7056  mmap(0x7f032f190000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f032f190000
+7056  mmap(0x7f032f191000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f032f191000
+7056  close(3)                          = 0
+7056  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+7056  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+7056  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+7056  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+7056  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0i8\235HZ\227\223\333\350s\360\352,\223\340."..., 68, 896) = 68
+7056  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+7056  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+7056  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f032ef66000
+7056  mmap(0x7f032ef8e000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f032ef8e000
+7056  mmap(0x7f032f123000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f032f123000
+7056  mmap(0x7f032f17b000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f032f17b000
+7056  mmap(0x7f032f181000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f032f181000
+7056  close(3)                          = 0
+7056  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f032ef63000
+7056  arch_prctl(ARCH_SET_FS, 0x7f032ef63740) = 0
+7056  set_tid_address(0x7f032ef63a10)   = 7056
+7056  set_robust_list(0x7f032ef63a20, 24) = 0
+7056  rseq(0x7f032ef640e0, 0x20, 0, 0x53053053) = 0
+7056  mprotect(0x7f032f17b000, 16384, PROT_READ) = 0
+7056  mprotect(0x7f032f191000, 4096, PROT_READ) = 0
+7056  mprotect(0x557715bd3000, 4096, PROT_READ) = 0
+7056  mprotect(0x7f032f1da000, 8192, PROT_READ) = 0
+7056  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+7056  munmap(0x7f032f193000, 52555)     = 0
+7056  rt_sigaction(SIGURG, {sa_handler=0x557715bcf3d0, sa_mask=[URG], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f032efa8520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+7056  write(2, "\nChallenge   0: 'Hello there'\n", 30) = 30
+7056  openat(AT_FDCWD, "/proc/self/loginuid", O_RDONLY) = 3
+7056  read(3, "1000", 12)               = 4
+7056  close(3)                          = 0
+7056  socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+7056  connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+7056  close(3)                          = 0
+7056  socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+7056  connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+7056  close(3)                          = 0
+7056  getrandom("\x2c\x21\x6d\xbd\x12\xcd\x51\x92", 8, GRND_NONBLOCK) = 8
+7056  brk(NULL)                         = 0x557717409000
+7056  brk(0x55771742a000)               = 0x55771742a000
+7056  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=542, ...}, 0) = 0
+7056  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+7056  openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+7056  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=542, ...}, AT_EMPTY_PATH) = 0
+7056  read(3, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 542
+7056  read(3, "", 4096)                 = 0
+7056  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=542, ...}, AT_EMPTY_PATH) = 0
+7056  close(3)                          = 0
+7056  openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 3
+7056  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2816, ...}, AT_EMPTY_PATH) = 0
+7056  lseek(3, 0, SEEK_SET)             = 0
+7056  read(3, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 2816
+7056  close(3)                          = 0
+7056  openat(AT_FDCWD, "riddle.savegame", O_RDWR|O_CREAT, 0600) = 3
+7056  ftruncate(3, 779)                 = 0
+7056  mmap(NULL, 779, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f032f1d9000
+7056  write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+7056  write(2, "\nChallenge   1: 'Gatekeeper'\n", 29) = 29
+7056  write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+7056  write(2, "\nChallenge   2: 'A time to kill'"..., 33) = 33
+7056  write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+7056  write(2, "\nChallenge   3: 'what is the ans"..., 74) = 74
+7056  write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+7056  write(2, "\nChallenge   4: 'First-in, First"..., 38) = 38
+7056  write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+7056  write(2, "\nChallenge   5: 'my favourite fd"..., 40) = 40
+7056  write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+7056  write(2, "\nChallenge   6: 'ping pong'\n", 28) = 28
+7056  write(2, "Hint:          'help us play!'.\n", 32) = 32
+7056  write(2, "Hint:          'strace --help 2>"..., 53) = 53
+7056  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f032ef63a10) = 7057
+7056  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+7057  set_robust_list(0x7f032ef63a20, 24) = 0
+7057  getpid()                          = 7057
+7057  newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+7056  <... clone resumed>, child_tidptr=0x7f032ef63a10) = 7058
+7058  set_robust_list(0x7f032ef63a20, 24 <unfinished ...>
+7056  wait4(-1,  <unfinished ...>
+7058  <... set_robust_list resumed>)    = 0
+7057  write(1, "[7057] PING!\n", 13 <unfinished ...>
+7058  alarm(2)                          = 0
+7057  <... write resumed>)              = 13
+7058  read(33,  <unfinished ...>
+7057  write(34, "\0\0\0\0", 4 <unfinished ...>
+7058  <... read resumed>"\0\0\0\0", 4)  = 4
+7058  alarm(0 <unfinished ...>
+7057  <... write resumed>)              = 4
+7058  <... alarm resumed>)              = 2
+7058  getpid( <unfinished ...>
+7057  alarm(2 <unfinished ...>
+7058  <... getpid resumed>)             = 7058
+7057  <... alarm resumed>)              = 0
+7057  read(53,  <unfinished ...>
+7058  newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+7058  write(1, "[7058] PONG!\n", 13)    = 13
+7058  getpid()                          = 7058
+7058  write(1, "[7058] PING!\n", 13)    = 13
+7058  write(54, "\1\0\0\0", 4)          = 4
+7058  alarm(2)                          = 0
+7058  read(33, "\1\0\0\0", 4)           = 4
+7058  alarm(0)                          = 2
+7058  exit_group(1)                     = ?
+7058  +++ exited with 1 +++
+7056  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 7058
+7056  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=7058, si_uid=1000, si_status=1, si_utime=0, si_stime=0} ---
+7056  wait4(-1,  <unfinished ...>
+7057  <... read resumed>0x7fffd6a2f2b4, 4) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+7057  --- SIGALRM {si_signo=SIGALRM, si_code=SI_KERNEL} ---
+7057  +++ killed by SIGALRM +++
+7056  <... wait4 resumed>[{WIFSIGNALED(s) && WTERMSIG(s) == SIGALRM}], 0, NULL) = 7057
+7056  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=7057, si_uid=1000, si_status=SIGALRM, si_utime=0, si_stime=0} ---
+7056  write(2, "\33[31mFAIL\33[0m\n", 14) = 14
+7056  write(2, "\nChallenge   7: 'What's in a nam"..., 36) = 36
+7056  write(2, "Hint:          'A rose, by any o"..., 47) = 47
+7056  write(2, "Hint:          'hard links'.\n", 29) = 29
+7056  lstat(".hello_there", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+7056  lstat(".hey_there", 0x7fffd6a2f270) = -1 ENOENT (No such file or directory)
+7056  write(2, "\33[31mFAIL\33[0m\n", 14) = 14
+7056  write(2, "\nNext challenge locked. Complete"..., 50) = 50
+7056  exit_group(1)                     = ?
+7056  +++ exited with 1 +++

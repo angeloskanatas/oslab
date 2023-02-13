@@ -1,0 +1,5 @@
+#!/bin/bash
+
+./change
+
+# +change_alt, +Python etc

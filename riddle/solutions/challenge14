@@ -1,0 +1,6 @@
+#!/bin/bash
+
+./the_One
+
+# +somehow to fool the system and change the kernel structures to have last pid=32766
+# update: WE FOUND IT! ->  "sudo echo 32766 > /proc/sys/kernel/ns_last_pid"

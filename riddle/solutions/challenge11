@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./esp
+# +Python, +exec 3<>secret_number cat <&3

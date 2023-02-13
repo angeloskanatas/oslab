@@ -1,0 +1,9 @@
+#!/bin/bash
+
+mkfifo pipe{1,2}
+exec 34<>pipe1
+exec 54<>pipe2
+./riddle 33>&34 53>&54
+# we need 2 pipes for the children to sync (if we use 1 pipe the outcome is pseudorandom and
+# depends on the scheduler), +Python/C and pipe(), dup2() (see ping_pong.py/ping_pong.c)
+

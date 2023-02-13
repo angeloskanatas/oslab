@@ -1,0 +1,5 @@
+#!/bin/bash
+
+nc -l -k 127.0.0.1 49842
+
+# +C/Python (socket(), bind(), listen(), accept())

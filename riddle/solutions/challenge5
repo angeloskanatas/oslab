@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./riddle 99>&1
+# +Python/C with dup2() (see fd99.py), +exec 99<>file

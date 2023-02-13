@@ -1,0 +1,106 @@
+execve("./riddle", ["./riddle"], 0x7fff5505e280 /* 58 vars */) = 0
+brk(NULL)                               = 0x55680121e000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffcdeb32040) = -1 EINVAL (Invalid argument)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff437c88000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=52611, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 52611, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ff437c7b000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14432, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 16424, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff437c76000
+mmap(0x7ff437c77000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7ff437c77000
+mmap(0x7ff437c78000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7ff437c78000
+mmap(0x7ff437c79000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7ff437c79000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0i8\235HZ\227\223\333\350s\360\352,\223\340."..., 68, 896) = 68
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff437a4e000
+mmap(0x7ff437a76000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7ff437a76000
+mmap(0x7ff437c0b000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7ff437c0b000
+mmap(0x7ff437c63000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7ff437c63000
+mmap(0x7ff437c69000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff437c69000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff437a4b000
+arch_prctl(ARCH_SET_FS, 0x7ff437a4b740) = 0
+set_tid_address(0x7ff437a4ba10)         = 2390
+set_robust_list(0x7ff437a4ba20, 24)     = 0
+rseq(0x7ff437a4c0e0, 0x20, 0, 0x53053053) = 0
+mprotect(0x7ff437c63000, 16384, PROT_READ) = 0
+mprotect(0x7ff437c79000, 4096, PROT_READ) = 0
+mprotect(0x556800f0a000, 4096, PROT_READ) = 0
+mprotect(0x7ff437cc2000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7ff437c7b000, 52611)           = 0
+rt_sigaction(SIGURG, {sa_handler=0x556800f063d0, sa_mask=[URG], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7ff437a90520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+write(2, "\nChallenge   0: 'Hello there'\n", 30) = 30
+openat(AT_FDCWD, "/proc/self/loginuid", O_RDONLY) = 3
+read(3, "1000", 12)                     = 4
+close(3)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+getrandom("\x9b\xa5\x82\xb7\x5c\x32\xc3\x5d", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x55680121e000
+brk(0x55680123f000)                     = 0x55680123f000
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=542, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=542, ...}, AT_EMPTY_PATH) = 0
+read(3, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 542
+read(3, "", 4096)                       = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=542, ...}, AT_EMPTY_PATH) = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2816, ...}, AT_EMPTY_PATH) = 0
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 2816
+close(3)                                = 0
+openat(AT_FDCWD, "riddle.savegame", O_RDWR|O_CREAT, 0600) = 3
+ftruncate(3, 779)                       = 0
+mmap(NULL, 779, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7ff437cc1000
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   1: 'Gatekeeper'\n", 29) = 29
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   2: 'A time to kill'"..., 33) = 33
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   3: 'what is the ans"..., 74) = 74
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   4: 'First-in, First"..., 38) = 38
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   5: 'my favourite fd"..., 40) = 40
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   6: 'ping pong'\n", 28) = 28
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   7: 'What's in a nam"..., 36) = 36
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   8: 'Big Data'\n", 27) = 27
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   9: 'Connect'\n", 26) = 26
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge  10: 'ESP'\n", 22) = 22
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge  11: 'ESP-2'\n", 24) = 24
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge  12: 'A delicate chan"..., 36) = 36
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge  13: 'Bus error'\n", 28) = 28
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge  14: 'Are you the One"..., 35) = 35
+write(2, "Hint:          'Are you 32767? I"..., 54) = 54
+write(2, "Hint:          'fork'.\n", 23) = 23
+getpid()                                = 2390
+write(2, "\33[31mI don't like my PID, get me"..., 55) = 55
+write(2, "\nNext challenge locked. Complete"..., 50) = 50
+exit_group(1)                           = ?
++++ exited with 1 +++

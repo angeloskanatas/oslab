@@ -1,0 +1,5 @@
+#!/bin/bash
+
+gcc -c -o library.o library.c
+gcc -shared -o tier2.so library.o
+./riddle

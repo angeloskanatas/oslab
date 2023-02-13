@@ -1,0 +1,4 @@
+#!/bin/bash
+
+chmod +w .hello_there
+truncate --size=32KB .hello_there

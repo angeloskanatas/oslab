@@ -1,0 +1,26 @@
+time(nil)                                                            = 1665848209
+srand(1665848209)                                                    = <void>
+signal(SIGURG, 0x561719ca63d0)                                       = nil
+__fprintf_chk(0x7f4104df06a0, 1, 0x561719ca7011, 0)                  = 30
+getlogin_r(0x561719cab640, 64, 0, 0x7f4104ceaa37)                    = 0
+open("riddle.savegame", 66, 0600)                                    = 3
+ftruncate(3, 779)                                                    = 0
+mmap(nil, 779, 0x3, MAP_SHARED, 3, 0)                                = 0x7f4104e49000
+fwrite("\033[36mWelcome back challenger. Yo"..., 1, 48, 0x7f4104df06a0) = 48
+__fprintf_chk(0x7f4104df06a0, 1, 0x561719ca7011, 1)                  = 29
+fwrite("\033[36mWelcome back challenger. Yo"..., 1, 48, 0x7f4104df06a0) = 48
+__fprintf_chk(0x7f4104df06a0, 1, 0x561719ca7011, 2)                  = 33
+fwrite("\033[36mWelcome back challenger. Yo"..., 1, 48, 0x7f4104df06a0) = 48
+__fprintf_chk(0x7f4104df06a0, 1, 0x561719ca7011, 3)                  = 74
+__fprintf_chk(0x7f4104df06a0, 1, 0x561719ca704b, 0x561719cab6a0)     = 25
+getenv("ANSWER")                                                     = nil
+__fprintf_chk(0x7f4104df06a0, 1, 0x561719ca706e, 0x561719ca700c)     = 14
+__fprintf_chk(0x7f4104df06a0, 1, 0x561719ca7011, 4)                  = 38
+getenv("I_HATE_GAME_HINTS")                                          = nil
+__fprintf_chk(0x7f4104df06a0, 1, 0x561719ca704b, 0x561719cab6a0)     = 82
+getenv("I_NEED_TECH_HINTS")                                          = nil
+open("magic_mirror", 2, 03162470071)                                 = -1
+__fprintf_chk(0x7f4104df06a0, 1, 0x561719ca706e, 0x561719cab6a0)     = 42
+fwrite("\nNext challenge locked. Complete"..., 1, 50, 0x7f4104df06a0) = 50
+exit(1 <no return ...>
++++ exited (status 1) +++

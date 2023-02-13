@@ -1,0 +1,14 @@
+#!/bin/bash
+
+touch bf00
+truncate -s 1073741824 bf00
+echo 'X'>>bf00
+
+for i in {1..9}
+do
+	ln bf00 bf0$i
+done
+
+./riddle
+
+# +C/Python and lseek(), write()

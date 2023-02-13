@@ -1,0 +1,5 @@
+#!/bin/bash
+
+touch secret_number
+ln secret_number found_secret_number
+./riddle
